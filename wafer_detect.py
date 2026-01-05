@@ -68,6 +68,9 @@ class WaferDetector:
         """
         Detect defects on the wafer image.
         
+        Assumes defects are darker than the background. The detection uses
+        THRESH_BINARY_INV, so darker regions will be identified as potential defects.
+        
         Args:
             image: Input BGR image
             
