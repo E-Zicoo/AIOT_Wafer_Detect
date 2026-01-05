@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['BLOCK ETCH', 'COATING BAD', 'PARTICLE', 'PIQ PARTICLE', 'PO CONTAMINATION', 'SCRATCH', 'SEZ BURNT']
+
+roboflow:
+  workspace: wafer-irhuv
+  project: wafer-defect-rv1vx
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/wafer-irhuv/wafer-defect-rv1vx/dataset/2
